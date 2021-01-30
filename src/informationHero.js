@@ -5,20 +5,8 @@ import Footer from './component/footer';
  
 const Informationhero = (props) => {
   let [data, setD] = useState([])
-  var subtitle;
-  const [selectedId, setSelectedId] = React.useState(null);
-  const [modalIsOpen,setIsOpen] = React.useState(false);
   const { id } = useParams()
-  const customStyles = {
-    content : {
-      top                   : '50%',
-      left                  : '50%',
-      right                 : 'auto',
-      bottom                : 'auto',
-      marginRight           : '-50%',
-      transform             : 'translate(-50%, -50%)'
-    }
-  };
+
   useEffect(() => {
     loadHeroes()
   }, [])
