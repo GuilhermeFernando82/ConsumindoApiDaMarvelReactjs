@@ -8,9 +8,9 @@ import description from './description.js';
 function Routes(){
     return (
         <BrowserRouter>
-            <Route path="/" exact component={Home}/>
-            <Route path="/informationHero/:id" component={informationHero}/>
-            <Route path="/description/:idD/:id" component={description}/>
+            <Route path="https://inspiring-franklin-a8c642.netlify.app/" exact component={Home}/>
+            <Route path="https://inspiring-franklin-a8c642.netlify.app/informationHero/:id" component={informationHero}/>
+            <Route path="https://inspiring-franklin-a8c642.netlify.app/description/:idD/:id" component={description}/>
            
             
         </BrowserRouter>
