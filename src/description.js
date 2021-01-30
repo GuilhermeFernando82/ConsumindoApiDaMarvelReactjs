@@ -21,7 +21,7 @@ const Description = (props) => {
         
       }
     loadHeroes()
-  }, [])
+  }, [data])
   
  
 

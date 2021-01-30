@@ -20,7 +20,7 @@ const Informationhero = (props) => {
         
       }
     loadHeroes()
-  }, [])
+  }, [data])
   
   
 
