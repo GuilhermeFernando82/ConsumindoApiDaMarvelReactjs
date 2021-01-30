@@ -5,21 +5,9 @@ import Footer from './component/footer';
  
 const Description = (props) => {
   let [data, setD] = useState([])
-  var subtitle;
-  const [selectedId, setSelectedId] = React.useState(null);
-  const [modalIsOpen,setIsOpen] = React.useState(false);
   const { id } = useParams()
   const { idD } = useParams()
-  const customStyles = {
-    content : {
-      top                   : '50%',
-      left                  : '50%',
-      right                 : 'auto',
-      bottom                : 'auto',
-      marginRight           : '-50%',
-      transform             : 'translate(-50%, -50%)'
-    }
-  };
+  
   useEffect(() => {
     loadHeroes()
   }, [])
@@ -35,10 +23,7 @@ const Description = (props) => {
       .catch(error => console.log('error', error));
       
     }
-  const OpenModal = () =>{
-    document.getElementsByClassName('modal-content')[0].style.display = 'block';
 
-  }
   const styleItens = {
     width: 200,
     
@@ -57,7 +42,7 @@ return (
           <h1 style={{fontFamily:'Comic Sans MS', color:'white', textAlign:'center'}}></h1>
             {data.filter(name => name.id == idD).map((m) => (    
               <div style={styleItens} class="center1">
-                <img style={{width: '100%',height:'189px', border: '6px solid #7460E1'}} src={m.thumbnail.path+"."+m.thumbnail.extension}/>   
+                <img alt="imgDesc" style={{width: '100%',height:'189px', border: '6px solid #7460E1'}} src={m.thumbnail.path+"."+m.thumbnail.extension}/>   
                 <span style={{fontFamily:'fantasy'}}>{m.name}</span><br/>
                 <h4 style={{color:'turquoise'}}>Description the Comics</h4>
                 <p style={{fontFamily:'Lucida Console', color:'white',fontSize:15}}>{m.description}</p>

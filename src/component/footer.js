@@ -1,5 +1,3 @@
-import React, { useState } from 'react';
-import Image1 from '../img/logo.png';
 function Footer() {
     return (
         <div class="footer">

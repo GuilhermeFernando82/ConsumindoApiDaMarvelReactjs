@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react'
-import Image1 from './img/logo.png'
 import {Autocomplete} from '@material-ui/lab';
 import TextField from '@material-ui/core/TextField';
 import NavBar from './component/headnavbar';
@@ -36,10 +35,7 @@ const Home = () => {
 
         
       }
-      const styleImg = {
-        height:150,
-        width:150
-      }
+      
     const Hero = data.map((number) => number.name);
     return (
         <React.Fragment>
