@@ -29,7 +29,7 @@ const Home = () => {
           width: 200,
           height:200,
           display: 'inline-block',
-          marginLeft:28,
+          marginLeft:55 ,
           position:'relative',
           
           justifyContent:'center', alignItems:'center', alignContent:'center'
