@@ -29,7 +29,7 @@ const Informationhero = (props) => {
     
     display: 'inline-block',
     verticalAlign: 'top',
-    marginLeft:55,
+    marginLeft:20,
     position:'relative',
     
     //justifyContent:'center', alignItems:'center', alignContent:'center'
