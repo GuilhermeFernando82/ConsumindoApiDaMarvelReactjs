@@ -84,7 +84,7 @@ const Home = () => {
       </div>
           { data.map((m) => (     
             <div style={styleItens}>
-              <img style={{marginTop:22, width: '100%',height:'189px', border: '6px solid #7460E1'}} src={m.thumbnail.path+"."+m.thumbnail.extension}/>   
+              <img style={{marginLeft:10,marginTop:22, width: '100%',height:'189px', border: '6px solid #7460E1'}} src={m.thumbnail.path+"."+m.thumbnail.extension}/>   
               <span style={{fontFamily:'fantasy'}}>{m.name}</span><br/>
               <button class="button1"><a style={{fontFamily:'sans-serif', textDecoration:'none', color:"white"}} href={"/informationHero/"+m.id}>Detalhes</a></button>
             </div>
