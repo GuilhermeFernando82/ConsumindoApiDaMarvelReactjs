@@ -14,7 +14,7 @@ const Description = (props) => {
          redirect: 'follow'
       };
       
-      fetch("https://gateway.marvel.com/v1/public/characters/"+id+"/comics?ts=1&apikey=ca2d7522c5335cf4063f41cdf441b285&hash=de260f8ad7782698855edf89786a425e", requestOptions)
+      fetch("https://gateway.marvel.com/v1/public/characters/"+id+"/comics?ts=1&apikey=4869898858a8224c4c4a5fa9dccb0eca&hash=b450505d5c3b35f34025c9564e766fa5", requestOptions)
         .then(response => response.json())
         .then(response => {setD(data = response.data.results)})
         .catch(error => console.log('error', error));
