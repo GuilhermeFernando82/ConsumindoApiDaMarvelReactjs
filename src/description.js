@@ -30,7 +30,7 @@ const Description = (props) => {
     
     display: 'inline-block',
     verticalAlign: 'top',
-    marginLeft:30,
+    marginLeft:23,
     position:'relative',
     
     //justifyContent:'center', alignItems:'center', alignContent:'center'
