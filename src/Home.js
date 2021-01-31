@@ -14,7 +14,7 @@ const Home = () => {
           redirect: 'follow'
         };
         
-        fetch("https://gateway.marvel.com/v1/public/characters?ts=1&apikey=73b451360b955e10ac6cdaf9efe86338&hash=1a4d4181b03ce9e8209e8301ef5ad51b", requestOptions)
+        fetch("https://gateway.marvel.com/v1/public/characters?ts=1&apikey=ca2d7522c5335cf4063f41cdf441b285&hash=de260f8ad7782698855edf89786a425e", requestOptions)
           .then(response => response.json())
           .then(response => {setD(data = response.data.results)})
           .catch(error => console.log('error', error));

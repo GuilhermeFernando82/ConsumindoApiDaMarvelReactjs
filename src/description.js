@@ -14,7 +14,7 @@ const Description = (props) => {
          redirect: 'follow'
       };
       
-      fetch("https://gateway.marvel.com/v1/public/characters/"+id+"/comics?ts=1&apikey=73b451360b955e10ac6cdaf9efe86338&hash=1a4d4181b03ce9e8209e8301ef5ad51b", requestOptions)
+      fetch("https://gateway.marvel.com/v1/public/characters/"+id+"/comics?ts=1&apikey=ca2d7522c5335cf4063f41cdf441b285&hash=de260f8ad7782698855edf89786a425e", requestOptions)
         .then(response => response.json())
         .then(response => {setD(data = response.data.results)})
         .catch(error => console.log('error', error));
@@ -42,12 +42,14 @@ return (
         <NavBar></NavBar>
           <h1 style={{fontFamily:'Comic Sans MS', color:'white', textAlign:'center'}}></h1>
             {data.filter(name => name.id == idD).map((m) => (    
-              <div style={styleItens} class="center1">
+            <div id="container" style={{textAlign:'center',alignContent:'center',justifyContent:'center',justifyItems:'center'}}>
+              <div style={styleItens} class="center">
                 <img alt="imgDesc" style={{width: '100%',height:'189px', border: '6px solid #7460E1'}} src={m.thumbnail.path+"."+m.thumbnail.extension}/>   
                 <span style={{fontFamily:'fantasy'}}>{m.name}</span><br/>
                 <h4 style={{color:'turquoise'}}>Description the Comics</h4>
                 <p style={{fontFamily:'Lucida Console', color:'white',fontSize:15}}>{m.description}</p>
               </div>
+            </div>
             ))}
         <Footer></Footer>      
     </React.Fragment>
